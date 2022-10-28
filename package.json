@@ -6,7 +6,8 @@
   "license": "MIT",
   "scripts": {
     "validate": "tsc -p . --skipLibCheck --noEmit",
-    "build": "yarn validate && tsc -p ."
+    "build": "npm run validate && tsc -p .",
+    "prepack": "npm run build"
   },
   "engines": {
     "honkit": ">1.x.x"
